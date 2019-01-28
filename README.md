@@ -6,21 +6,21 @@
 Delete public key 
 <code>
 <pre>
-	gpg --delete-key aung@gmail.com 
+gpg --delete-key aung@gmail.com 
 </code>
 </pre>
 
 Delte private key 
 <code>
 <pre>
-	gpg --delete-secret-key aung@gmail.com 
+gpg --delete-secret-key aung@gmail.com 
 </pre>
 </code>
 
 List key
 <code>
 <pre>
-	gpg --list-keys
+gpg --list-keys
 </pre>
 </code>
  
@@ -30,7 +30,7 @@ List key
 RealName ==> aung email==> aung@gmail.com
 <code>
 <pre>
-	gpg --full-generate-key 
+gpg --full-generate-key 
 </code>
 </pre>
 </p> 
@@ -41,7 +41,7 @@ RealName ==> aung email==> aung@gmail.com
 RealName ==> thiri email==> thiri@gmail.com
 <code>
 <pre>
-	gpg --gen-key 
+gpg --gen-key 
 </code>
 </pre>
 </p> 
@@ -51,7 +51,7 @@ RealName ==> thiri email==> thiri@gmail.com
 <p>
 <code>
 <pre>
-	gpg --armor --output aung_public-key.asc --export aung@gmail.com 
+gpg --armor --output aung_public-key.asc --export aung@gmail.com 
 </code>
 </pre>
 </p>
@@ -73,7 +73,7 @@ gpg --armor --output thiri_EN_PUBLIC.asc--export thiri@gmail.com
 In DBS PayLah Computer 
 <code>
 <pre>
-	gpg --sign-key aung@gmail.com 
+gpg --sign-key aung@gmail.com 
 </code>
 </pre>
 <p>
@@ -83,7 +83,7 @@ In DBS PayLah Computer
 <p>
 <code>
 <pre>
-	gpg --sign-key thiri@gmail.com 
+gpg --sign-key thiri@gmail.com 
 </code>
 </pre>
 </p>
@@ -106,7 +106,7 @@ gpg --output webcheckout_req.txt.gpg --encrypt --sign --armor --compress-algo zi
 <p>
 <code>
 <pre>
-	gpg --output decryptMsg --decrypt webcheckout_req.txt.gpg 
+gpg --output decryptMsg --decrypt webcheckout_req.txt.gpg 
 </code>
 </pre>
 </p>
@@ -117,7 +117,7 @@ gpg --output webcheckout_req.txt.gpg --encrypt --sign --armor --compress-algo zi
 <p>
 <code>
 <pre>
-	gpg --output webcheckout_res.txt.gpg --encrypt --sign --armor --compress-algo zip -r aung@gmail.com webcheckout_res.txt 
+gpg --output webcheckout_res.txt.gpg --encrypt --sign --armor --compress-algo zip -r aung@gmail.com webcheckout_res.txt 
 </code>
 </pre>
 </p>
@@ -127,7 +127,7 @@ gpg --output webcheckout_req.txt.gpg --encrypt --sign --armor --compress-algo zi
 <p>
 <code>
 <pre>
-	gpg --output decryptMsg --decrypt webcheckout_res.txt.gpg
+gpg --output decryptMsg --decrypt webcheckout_res.txt.gpg
 </code>
 </pre>
 </p>
